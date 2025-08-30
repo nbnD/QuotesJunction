@@ -29,10 +29,6 @@ class MainViewModel( private val context: Context): ViewModel() {
 
     fun getQuote() = quoteList[index]
 
-//    fun nextQuote() = quoteList[++index % quoteList.size]
-//    index = (index + 1).mod(quoteList.size)
-//    return quoteList[index]
-
     fun nextQuote(): Quote {
         index = (index + 1).mod(quoteList.size)
         return quoteList[index]

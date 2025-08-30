@@ -28,7 +28,7 @@
     <LinearLayout
         android:id="@+id/cardView"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/bg_card"
@@ -91,6 +91,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
+            android:id="@+id/btnPrevious"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -101,6 +102,7 @@
             style="?attr/borderlessButtonStyle" />
 
         <Button
+            android:id="@+id/btnNext"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -116,12 +118,12 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:contentDescription="Share"
         android:background="@drawable/shape_circle"
         android:onClick="onShare"
         android:src="@drawable/ic_share"
         android:tint="@android:color/white"
         app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        android:contentDescription="Share"
         app:layout_constraintEnd_toEndOf="@+id/cardView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

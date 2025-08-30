@@ -13,6 +13,8 @@ constraintlayout = "2.2.1"
 gson = "2.13.1"
 junitJunit = "4.12"
 material = "1.12.0"
+androidxTestCore = "1.5.0"
+androidxTestRunner = "1.5.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -35,6 +37,13 @@ androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayo
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 material = { module = "com.google.android.material:material", version.ref = "material" }
 
+
+# AndroidX Test
+androidx-test-core = { module = "androidx.test:core", version.ref = "androidxTestCore" }
+androidx-test-core-ktx = { module = "androidx.test:core-ktx", version.ref = "androidxTestCore" }
+androidx-test-ext-junit-ktx = { module = "androidx.test.ext:junit-ktx", version.ref = "junitVersion" }
+androidx-test-runner = { module = "androidx.test:runner", version.ref = "androidxTestRunner" }
+androidx-test-espresso-intents = { module = "androidx.test.espresso:espresso-intents", version.ref = "espressoCore" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
